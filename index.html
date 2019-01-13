@@ -23,9 +23,9 @@
 
         const timerEl = document.querySelector('#timer')
         setInterval(()=>{
-            const dueDate = moment('13/1/2019','DD/MM/YYYY');
+            const dueDate = moment('14/1/2019','DD/MM/YYYY');
             let currentDate = moment();
-            let x = currentDate.diff(dueDate,'milliseconds')
+            let x = dueDate.diff(currentDate,'milliseconds')
             timerEl.innerHTML = x;
             
         }, 1);
